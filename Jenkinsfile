@@ -48,7 +48,7 @@ pipeline {
         docker 'openjdk:8u171-jre-alpine'
       }
       steps {
-        sh "wget http://kebroad2.mylabserver.com/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
+        sh "wget http://kebroad1.mylabserver.com/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       }
     }
