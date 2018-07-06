@@ -36,7 +36,7 @@ pipeline {
     }
     stage("Running on CentOS") { 
       agent {
-        label 'CentOS'
+        label 'CentOs'
       }
       steps {
         sh "wget http://kebroad1.mylabserver.com/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
